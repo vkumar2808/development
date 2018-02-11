@@ -7,9 +7,10 @@ pipeline {
       }
     }
   }
+  // this is for post build action and archive artifacts to match with fingerprint
   post {
     always {
-      archive 'dist/*.jar'
+      archiveArtifacts artifacts: 'dist/*.jar', fingerprint: true
     }
   }
 }
