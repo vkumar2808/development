@@ -10,7 +10,8 @@ pipeline {
   // this is for post build action and archive artifacts to match with fingerprint
   post {
     always {
-      archiveArtifacts artifacts: 'dist/*.jar', fingerprint: true
+      //archiveArtifacts artifacts: 'dist/*.jar', fingerprint: true
+      echo "This is for archiveArtifacts fingerprint"
     }
   }
 }
