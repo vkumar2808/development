@@ -12,14 +12,13 @@ pipeline {
       }
     }
   }
-   stage {
     stage('build') {
       steps {
       echo "Hello This is my first pipeline project"
       "/usr/bin/docker pull nginx"
       }
     }
-  }
+  
  // stage ("Test on Debian") {
 //    agent {
   //    docker 'openjdk:8u121-jre'
