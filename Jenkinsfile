@@ -12,11 +12,11 @@ pipeline {
       }
     }
   }
-  stage ("Test on Debian") {
-    agent {
-      docker 'openjdk:8u121-jre'
-    }
-  }
+ // stage ("Test on Debian") {
+//    agent {
+  //    docker 'openjdk:8u121-jre'
+  //  }
+ // }
   // this is for post build action and archive artifacts to match with fingerprint
   post {
     always {
