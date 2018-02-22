@@ -13,7 +13,7 @@ pipeline {
     }
   }
    stages {
-    stage('docker') {
+    stage('build') {
       steps {
       echo "Hello This is my first pipeline project"
       docker pull nginx
